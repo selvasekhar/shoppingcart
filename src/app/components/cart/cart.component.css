@@ -1,0 +1,23 @@
+.card{
+    height: 80vh;
+    margin:25px;
+    padding: 25px;
+
+}
+
+.center img{
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+    height: 472px;
+    width: 1025px;
+    padding-top:-180px;
+}
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

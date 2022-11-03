@@ -1,0 +1,49 @@
+<div class="card-top container-fluid">
+    <div class="d-flex justify-content-left align-items-left">
+        <div class="item">
+            <a>
+                <img src="https://res.cloudinary.com/dlxdqxzny/image/upload/v1667298169/md-wall-clock-yewc-180-analog-maina-decor-original-imafnzpkybqdjmen_hrjhto.webp"
+                    style="width: 65px; height: 65px;">
+                <h6>All products1</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://res.cloudinary.com/dlxdqxzny/image/upload/v1667298358/lsbd875-rg-enterprises-15-6-original-imagczthjr3bgtrd_gjkagn.webp"
+                    style="width: 65px; height: 65px;">
+                <h6>All products1</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://res.cloudinary.com/dlxdqxzny/image/upload/v1667298385/flipkart-logo-transparent-png-download-0_1_wyspaq.png"
+                    style="width: 65px; height: 65px;">
+                <h6>All products1</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://res.cloudinary.com/dlxdqxzny/image/upload/v1667298359/trendy-60-1-table-fan-400-candes-original-imagj82xafugqtes_ad72io.webp"
+                    style="width: 65px; height: 65px;">
+                <h6>All products1</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container"   style="margin-top: 110px">
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+            <div class="card col-md-3">
+                <img style="height:50% ;" src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap; overflow:hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap; overflow:hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong>${{item.price}}</p>
+                <button class="btn btn-primary" (click)="addtocart(item)"> Add to Cart</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div>
